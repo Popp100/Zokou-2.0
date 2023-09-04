@@ -60,13 +60,13 @@ Je suis *${s.NOM_BOT}*, un bot développé par *La team DXD*.
 
     menuMsg += `\n\n
 🔰 Pour utiliser une commande, tapez "${prefixe}<nom de la commande>".
-🔰 Fait avec node.js || High School DxD-MD
+🔰 Fait avec node.js || Blumhart👑🔥⚔️-MD
 `;
 
     var link = s.IMAGE_MENU;
 
     try {
-        zk.sendMessage(dest, { image: { url: link }, caption:infoMsg + menuMsg, footer: "Je suis *High School DxD-MD*, développé par Blumhart👑🔥⚔️" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: link }, caption:infoMsg + menuMsg, footer: "Je suis *Blumhart👑🔥⚔️-MD*, développé par Blumhart👑🔥⚔️" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
