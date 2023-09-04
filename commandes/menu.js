@@ -38,13 +38,13 @@ zokou({ nomCom: "menu", categorie: "Général" }, async (dest, zk, commandeOptio
 ║    Heure : ${temps}
 ║    Mémoire : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ║    Plateforme : ${os.platform()}
-║    Développeurs : Djalega++ 
-║     & Luffy
+║    Développeurs : Blumhart👑🔥⚔️ 
+║     & Rihito Bahha
 ╚════--------------- \n\n`;
     
     let menuMsg = `
 👋 salut ${nomAuteurMessage} 👋
-Je suis *${s.NOM_BOT}*, un bot développé par *La team Zokou*.
+Je suis *${s.NOM_BOT}*, un bot développé par *La team DXD*.
 🔰 Mon préfixe : ${prefixe}
 **Voici la liste de mes commandes :**
 `;
@@ -60,13 +60,13 @@ Je suis *${s.NOM_BOT}*, un bot développé par *La team Zokou*.
 
     menuMsg += `\n\n
 🔰 Pour utiliser une commande, tapez "${prefixe}<nom de la commande>".
-🔰 Fait avec node.js || Zokou_2.0-MD
+🔰 Fait avec node.js || High School DxD-MD
 `;
 
     var link = s.IMAGE_MENU;
 
     try {
-        zk.sendMessage(dest, { image: { url: link }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: link }, caption:infoMsg + menuMsg, footer: "Je suis *High School DxD-MD*, développé par Blumhart👑🔥⚔️" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
