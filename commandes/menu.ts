@@ -33,7 +33,7 @@ cm.map(async(com,index)=>{if(!coms[com.categorie])coms[com.categorie]=[]; coms[c
  console.log("date" +date) 
   console.log("temps "+temps)
   
-let menuMsg="  ╩═══ * Ƶ𝓞ｋØ𝓊 * ╩═══\n\n";
+let menuMsg="  ╩═══ * Blumhar t👑🔥⚔️ * ╩═══\n\n";
 
   
 /*menuMsg+=`
@@ -60,7 +60,7 @@ Owner : ${s.NOM_OWNER} \n       || Commandes : ${cm.length} \n        || Date : 
 ||      Date : ${date}
 ||      Heure : ${temps}
 ||      Mémoire : ${format(os.totalmem()-os.freemem())}/${format(os.totalmem())}                   {Plateforme : ${os.platform()}
-||  Développeurs : Djalega++||Luffy
+||  Développeurs : Blumhart👑🔥⚔️||Rihito Bahha
 || 
 ╚════ ▓▓ ࿇ ▓▓ ════╝`;*/
 
@@ -75,7 +75,7 @@ Owner : ${s.NOM_OWNER} \n       || Commandes : ${cm.length} \n        || Date : 
 ║    Heure : ${temps}
 ║    Mémoire : ${format(os.totalmem()-os.freemem())}/${format(os.totalmem())}
 ║    Plateforme : ${os.platform()}
-║    Développeurs : Djalega++||Luffy
+║    Développeurs : Blumhart👑🔥⚔️||Rihito Bahha
 ╚════--------------- \n\n`;
 
 
