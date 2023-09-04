@@ -107,7 +107,7 @@ for(const cat in coms )
          }
   }
 
-    //  var link = "https://wallpapercave.com/uwp/uwp3860299.jpeg";
+    //  var link = "https://wallpapercave.com/wp/wp2063684.png";
   var link = s.IMAGE_MENU ;
 
 
