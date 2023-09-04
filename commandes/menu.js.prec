@@ -68,7 +68,7 @@ zokou({ nomCom: "menu", categorie: "Général" }, async (dest, zk, commandeOptio
             menuMsg += "\t  ║ " + cmd + "" + " \n";
         }
     }
-    //  var link = "https://wallpapercave.com/wp/wp2063684.jpeg";
+    //  var link = "https://wallpapercave.com/wp/wp2063684.png";
     var link = s.IMAGE_MENU;
     try {
         zk.sendMessage(dest, { image: { url: link }, caption: menuMsg, footer: "by Djalega++" }, { quoted: ms });
