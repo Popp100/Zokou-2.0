@@ -89,6 +89,8 @@ _*En cours de téléchargement...*_\n\n`
 
      zk.sendMessage(origineMessage, { audio: { url:"audio.mp3"},mimetype:'audio/mp4' }, { quoted: ms,ptt: false });
         console.log("Envoi du fichier audio terminé !");
+
+     
       });
 
       fileStream.on('error', (error) => {
@@ -168,38 +170,3 @@ _*En cours de téléchargement...*_\n\n`
     repondre('Une erreur est survenue lors de la recherche ou du téléchargement de la vidéo.');
   }
 });
-
-
-
-zokou({nomCom:"son",categorie:"Recherche"},async(dest,zk,commandeOptions)=>{
-  let {ms,prefixe,arg,repondre}=commandeOptions;
-
-   try{
-     
-        if(!arg||arg=="")
-     {
-       repondre(prefixe+"son mon gbonhi");return;
-     }
-     const topo = arg.join(" ");
- console.log(topo)
-     var rch = yts1(topo);
-     var resul = rch.videso[0];
-     var sonUrl =result.url;
-     yt.mp3(sonUrl).then((fichier)=>{
-   const entFic=fichier.path;
-   const sortFic=entFic+".opus";
-   ffmpeg(entFic).format("opus") .on("error", (err) => {
-              console.error( err);
-            }).on('end',async()=>{
-
-                     zk.sendMessage(origineMessage, { audio: { url:fs.readFileSync(sortFic)/*"./audio.mp3"*/},mimetype:'audio/mp4' }, { quoted: ms,ptt: true }) ;
-            }).save(sortFic)
- })
-   //  console.log(mus.path);
-  /* await  zk.sendMessage(dest,{ audio: fs.readFileSync(mus.path),
-                  mimetype: "audio/mpeg",
-                  ptt: true,},{quoted:ms})*/
-   }catch(e){}
-     
-})
-
